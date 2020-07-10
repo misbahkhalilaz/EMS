@@ -1,0 +1,113 @@
+{
+	"owner": {
+		"name": "String",
+		"userid": "String",
+		"password": "String"
+	},
+
+	"department": {
+		"_id": "String",
+		"name": "String",
+		"admins": [
+			{
+				"name": "String",
+				"userid": "String",
+				"password": "String"
+			}
+		],
+		"broadcasts": [
+			{
+				"timestamp": "string",
+				"message": "String"
+			}
+		]
+	},
+
+	"Employee": {
+		"_id": "String",
+		"did": "String",
+		"jod_id": "String",
+		"name": "String",
+		"contact": {
+			"mobile": "String",
+			"email": "String",
+			"address": "String"
+		},
+		"resume": "String",
+		"joining_date": "date",
+		"credentials": {
+			"userid": "String",
+			"password": "String"
+		}
+	},
+
+	"attendance": {
+		"employee_id": "String",
+		"date": "date",
+		"time": {
+			"entry_time": "time",
+			"exit_time": "time"
+		},
+		"present": "bool",
+		"leave": "bool",
+		"penalty/bonus": "int",
+		"chat_admin": [
+			{
+				"timestamp": "string",
+				"sender": "String",
+				"message": "String"
+			}
+		]
+	},
+
+	"jobs": {
+		"_id": "String",
+		"details": {
+			"title": "String",
+			"roles": "String",
+			"description": "String"
+		},
+		"pay": "int",
+		"hours": "int",
+		"leaves": "int",
+		"overtime_pay/hr": "int",
+		"incompleteTime_pay/hr": "int",
+		"fixed_allowances": {
+			"req_service_months": "int",
+			"monthly": [
+				{
+					"title": "String",
+					"amount": "int"
+				}
+			],
+			"yearly": [
+				{
+					"title": "String",
+					"month": "int",
+					"amount": "int"
+				}
+			]
+		}
+	},
+
+	"salary": {
+		"Emp_id": "String",
+		"month": "int",
+		"year": "int",
+		"date": "date",
+		"pay": "int",
+		"bonus": "int",
+		"allowances": {
+			"dedicated": [
+				{
+					"title": "String",
+					"amount": "int"
+				}
+			],
+			"fixed": "int"
+		},
+		// "penalty": "int",
+		"total_salary": "int",
+		"description": "String"
+	}
+}

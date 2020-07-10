@@ -1,0 +1,4 @@
+.EMS_backend/node_modules
+.EMS_backend/.git
+.EMS_frontenf/node_modules
+.EMS_frontend/.git
